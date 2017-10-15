@@ -10,7 +10,7 @@ end
 
 def position_taken?(board, index)
   if board[index] != ""
-     false
+     return false
   end
 end
 
