@@ -10,19 +10,20 @@ def position_taken?(board, index)
 end
 
 def position_taken?(board, index)
-  if board[0] != [""]
-    false
+  if board[index] == ""
+     return false
   end
 end
 
 def position_taken?(board, index)
-  if board[0] == ["nil"]
-    false
+  if board[index] == nil
+     return false
   end
 end
 
 def position_taken?(board, index)
-  if board[0] == ["X"] || board[8] == ["O"]
+  if board[index] == "X" || "O"
+    return true
 
   end
 end
